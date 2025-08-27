@@ -1,0 +1,22 @@
+@startuml
+actor "Family Member" as User
+actor "External API" as API
+
+rectangle familyBot {
+  usecase "Receive Birthday Reminder" as U1
+  usecase "Receive Family Date Reminder" as U2
+  usecase "Receive Holiday Greeting" as U3
+  usecase "Check Weather Forecast" as U4
+  usecase "Ask ChatGPT a Question" as U5
+}
+
+User --> U1
+User --> U2
+User --> U3
+User --> U4
+User --> U5
+
+U3 ..> API : "Holiday API"
+U4 ..> API : "Weather API"
+U5 ..> API : "OpenAI API"
+@enduml

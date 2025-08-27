@@ -1,0 +1,22 @@
+== Use Case Scenarios
+
+=== Use Case: Receive Birthday Reminder
+* **Actor:** Family Member
+* **Precondition:** Birthday data is stored in the database.
+* **Trigger:** The bot detects an upcoming birthday (e.g., 1 day before).
+* **Main Flow:**
+1. The bot checks the database daily.
+2. The bot identifies birthdays occurring in the next 24 hours.
+3. The bot posts a reminder message in the Telegram group.
+* **Postcondition:** All family members are notified in advance of the birthday.
+
+=== Use Case: Ask ChatGPT a Question
+* **Actor:** Family Member
+* **Precondition:** ChatGPT integration is enabled.
+* **Trigger:** A user invokes the bot with a specific command (e.g., `/ask`).
+* **Main Flow:**
+1. The user sends a command with a question to the bot.
+2. The bot forwards the query to the OpenAI API.
+3. The bot receives the response.
+4. The bot posts the response into the Telegram group chat.
+* **Postcondition:** The family member receives a ChatGPT-generated answer.
