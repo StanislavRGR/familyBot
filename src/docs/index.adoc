@@ -1,0 +1,17 @@
+= familyBot - Software Requirements Specification (SRS)
+
+:sectnums:
+:sectnumlevels: 5
+:toc: left
+:toclevels: 4
+:toc-title: Table of Contents
+
+. <<getDraft/getDraft.adoc#, getDraft>> - метод получения данных заявки на изменение правила подписания
+
+. <<01-introduction.adoc#, introduction>> - введение
+. include::02-overall-description.adoc[] # Общее описание
+. include::03-functional-requirements.adoc[] # Функциональные требования
+. include::04-nonfunctional-requirements.adoc[] # Нефункциональные требования
+. include::05-use-cases.adoc[] # Use Case модель и сценарии
+. include::06-architecture.adoc[] # Архитектура системы
+. include::07-appendices.adoc[] # Доп. разделы (например, data model, security)
