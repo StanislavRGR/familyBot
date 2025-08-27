@@ -1,5 +1,7 @@
-# Основные зависимости для Telegram-бота
-python-telegram-bot==20.7
+# pip install -r requirements.txt
+
+# Основные зависимости для Telegram-бота (с поддержкой JobQueue)
+python-telegram-bot[job-queue]==20.7
 
 # Работа с переменными окружения (.env)
 python-dotenv==1.0.1
